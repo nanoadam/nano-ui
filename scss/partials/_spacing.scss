@@ -1,0 +1,13 @@
+$space-amounts: (1, 2, 3, 4);
+$sides: (right, left, bottom, top);
+$types: (margin, padding);
+
+@each $space in $space-amounts {
+  @each $side in $sides {
+    @each $type in $types {
+      .#{str-slice($type, 0, 1)}#{str-slice($side, 0, 1)}-#{$space} {
+        #{$type}-#{$side}: #{$space}px !important;
+      }
+    }
+  }
+}

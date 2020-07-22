@@ -1,0 +1,14 @@
+{
+  "name": "nano-ui",
+  "version": "0.10",
+  "description": "A UI Framework for web applications",
+  "main": "index.js",
+  "scripts": {
+    "dev-css": "node-sass -w --include-path scss scss/main.scss ./dist/css/main.min.css --output-style compressed"
+  },
+  "author": "Nano Adam",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
